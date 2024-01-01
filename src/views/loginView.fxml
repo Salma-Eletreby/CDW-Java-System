@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.loginController">
+   <center>
+      <AnchorPane prefHeight="54.0" prefWidth="199.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="bgd" fitHeight="408.0" fitWidth="681.0" layoutY="-8.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/loginScreen.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="212.0" layoutY="90.0" text="Welcome to Central Doha Waste">
+               <font>
+                  <Font name="Arabic Typesetting" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="212.0" layoutY="161.0" text="Username">
+               <font>
+                  <Font name="Arabic Typesetting" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginBTN" layoutX="257.0" layoutY="326.0" mnemonicParsing="false" onAction="#loginACT" prefHeight="18.0" prefWidth="168.0" text="Login" />
+            <Label layoutX="214.0" layoutY="213.0" text="Password">
+               <font>
+                  <Font name="Arabic Typesetting" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userTXT" layoutX="302.0" layoutY="163.0" />
+            <Label fx:id="helpTXT" layoutX="432.0" layoutY="325.0" text="?">
+               <tooltip>
+                  <Tooltip text="If you cannot login please place a ticket with HR System" />
+               </tooltip>
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <PasswordField fx:id="passTXT" layoutX="302.0" layoutY="213.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
